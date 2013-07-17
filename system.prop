@@ -6,3 +6,6 @@ ro.ril.hsxpa=1
 ro.ril.gprsclass=10
 # tvdpi
 ro.sf.lcd_density=213
+
+# enable tvout
+ro.tvout.enable=true

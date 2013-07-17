@@ -26,3 +26,5 @@ TARGET_KERNEL_CONFIG := cyanogenmod_p6800_defconfig
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6800/bluetooth
 
 BOARD_HAS_EARPIECE := true
+
+BOARD_USES_GP2A := true

@@ -27,15 +27,16 @@
          This must be overridden in platform specific overlays -->
     <!-- values from stock framework -->
     <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>40</item>
-        <item>110</item>
-        <item>160</item>
-        <item>220</item>
+        <item>10</item>
+        <item>55</item>
+        <item>100</item>
+        <item>145</item>
+        <item>190</item>
         <item>255</item>
     </integer-array>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
-    <integer name="config_screenBrightnessDim">30</integer>
+    <integer name="config_screenBrightnessDim">10</integer>
 
     <!-- This string array should be overridden by the device to present a list of network
          attributes.  This is used by the connectivity manager to decide which networks can coexist
