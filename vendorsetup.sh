@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2012 The CyanogenMod Project
+# Copyright (C) 2008 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,21 +14,10 @@
 # limitations under the License.
 #
 
-DEVICE_PACKAGE_OVERLAYS += device/samsung/p6800/overlay
+# This file is executed by build/envsetup.sh, and can use anything
+# defined in envsetup.sh.
+#
+# In particular, you can add lunch options with the add_lunch_combo
+# function: add_lunch_combo generic-eng
 
-# Include common smdk4210-tab configuration
--include device/samsung/smdk4210-tab/BoardConfigCommon.mk
-
-# RIL
-BOARD_PROVIDES_LIBRIL := true
-BOARD_MODEM_TYPE := xmm6260
-
-TARGET_OTA_ASSERT_DEVICE := p6800,GT-P6800
-
-TARGET_KERNEL_CONFIG := cyanogenmod_p6800_defconfig
-
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/p6800/bluetooth
-
-BOARD_HAS_EARPIECE := true
-
-BOARD_USES_GP2A := true
+add_lunch_combo aosp_p6800-userdebug

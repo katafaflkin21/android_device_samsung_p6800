@@ -21,8 +21,8 @@ PRODUCT_AAPT_PREF_CONFIG := tvdpi
 
 # Audio
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/configs/etc/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
-	$(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf
+    $(LOCAL_PATH)/configs/etc/tinyalsa-audio.xml:system/etc/tinyalsa-audio.xml \
+    $(LOCAL_PATH)/configs/etc/audio_policy.conf:system/etc/audio_policy.conf
 
 # International variants have proximity sensor
 PRODUCT_COPY_FILES += \
@@ -31,13 +31,13 @@ PRODUCT_COPY_FILES += \
 # GPS
 $(call inherit-product, device/common/gps/gps_eu_supl.mk)
 PRODUCT_COPY_FILES += \
-	device/samsung/smdk4210-tab/init.smdk4210.gps.rc:root/init.smdk4210.gps.rc \
+	device/samsung/smdk4210-tab/rootdir/init.smdk4210.gps.rc:root/init.smdk4210.gps.rc \
 	device/samsung/smdk4210-tab/configs/etc/gps.cer:system/etc/gps.cer \
 	device/samsung/smdk4210-tab/configs/etc/gps.xml:system/etc/gps.xml
 
 # Radio
 $(call inherit-product, build/target/product/telephony.mk)
-$(call inherit-product, vendor/cm/config/gsm.mk)
+#$(call inherit-product, vendor/cm/config/gsm.mk)
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
